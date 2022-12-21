@@ -4,24 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Faleconosco</title>
 </head>
 <body>
     <header>
-        <section>
-            <img src="./img/CBX logo.jpeg" alt="">
+        <section class="container-navegacao">
+            <img src="./img/CBX_SFUNDO.png" alt="">
             <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="produtos.html">Produto</a></li>
-                    <li><a href="fale_conosco.html">Fale Conosco</a></li>
-                    <li><a href="telecomunica.html">Telecomunicações</a></li>
-                    <li><a href="eletrica.html">Elétrica</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                <ul class="menu-navegacao">
+                    <a href="home.html"><li>Home</li></a>
+                    <a href="produtos.html"><li>Produto</li></a>
+                    <a href="fale_conosco.html"><li>Fale Conosco</li></a>
+                    <a href="telecomunica.html"><li>Telecomunicações</li></a>
+                    <a href="eletrica.html"><li>Elétrica</li></a>
+                    <a href="contato.html"><li>Contato</li></a>
                 </ul>
             </nav>
         </section>
     </header>
+    <main>
+        <form>
+            <div class="primeiro-conjunto-input">
+                <div class="container-label-input">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" class="input-padrao" required>
+                </div>
+                <div class="container-label-input">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                </div>
+                <div class="container-label-input">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(DDD) XXXXX-XXXX">
+                </div>
+                <div class="container-label-input area-texto">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea cols="70" rows="10" id="mensagem" required></textarea>
+                </div>
+            </div>
+
+            <fieldset class="pref-contato-container">
+                <legend>Como prefere nosso contato?</legend>
+                <div>
+                    <label for="radio-email">Email</label>
+                    <input type="radio" name="contato" value="email" id="radio-email">
+                </div>
+                <div>
+                    <label for="radio-telefone">Telefone</label>
+                    <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                </div>
+                <div>
+                    <label for="radio-whatsapp">Whatsapp</label>
+                    <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"checked>
+                </div>
+            </fieldset>
+
+            <fieldset class="pref-horario">
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox"> Quer receber nossas novidades por email?</label>
+
+            <input type="submit" value="Enviar formulário" class="botao-enviar">
+        </form>
+       
+    </main>
+    <footer>
+        <p class="texto-redes-sociais">Redes Sociais</p>
+        <ul class="container-redes-sociais">
+            <li><a href=""><img src="./img/Redes_sociais/github-icon.jpg" alt="LinkedIn_logo"></a></li>
+            <li><a href=""><img src="./img/Redes_sociais/instagram-icon.jpg" alt="Instagram_logo"></a></li>
+            <li><a href=""><img src="./img/Redes_sociais/likedin-icon.jpg" alt="Facebook_logo"></a></li>
+        </ul>
+    </footer>
 </body>
 </html>
