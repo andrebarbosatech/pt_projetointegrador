@@ -51,6 +51,7 @@ section img{
 
 main{
     margin-top: 20px;
+    min-height: 50vh;
     /*background-color: rgb(0, 44, 44);*/
 }
 
@@ -70,8 +71,8 @@ footer{
     align-items: center;
 }
 
-footer ul img {
-    width: 50px;
+footer img {
+    width: 400px;
  
 }
 
@@ -170,4 +171,11 @@ footer ul img {
 
 .imagem-github img{
     size: 400px;
+}
+
+.lista-desenvolvedores{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
 }
